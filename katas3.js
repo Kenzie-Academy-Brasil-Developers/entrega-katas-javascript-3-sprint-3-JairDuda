@@ -2,7 +2,7 @@ function showResults (valor){
 
     let newElement = document.createElement("div");
     newElement.className = "divInterna";
-    let newText = document.createTextNode("Os valores do "  + valor)
+    let newText = document.createTextNode("Resposta:  "  + valor)
     newElement.appendChild(newText)
     let destino = document.getElementById("d1")
     destino.appendChild(newElement)
@@ -23,7 +23,7 @@ function kata1() {
     return arrayValores
 } 
 
-showResults("kata 1: " + kata1());
+showResults(kata1());
 
 
 function kata2() {
@@ -34,7 +34,7 @@ function kata2() {
     return arrayValores;
 }
 
-showResults("kata 2: " + kata2());
+showResults(kata2());
 
 function kata3() {
     let arrayValores = [];
@@ -44,7 +44,7 @@ function kata3() {
     return arrayValores;
 }
 
-showResults("kata 3: " + kata3()); 
+showResults(kata3()); 
 
 function kata4() {
     let arrayValores = [];
@@ -54,7 +54,7 @@ function kata4() {
     return arrayValores;
 }
 
-showResults("kata 4: " + kata4()); 
+showResults(kata4()); 
 
 function kata5() {
     let arrayValores = [];
@@ -65,7 +65,7 @@ function kata5() {
     }
     return arrayValores
 }
-showResults("kata 5: " + kata5());
+showResults(kata5());
 
 
 function kata6() {
@@ -78,7 +78,7 @@ function kata6() {
     return arrayValores
 }
 
-showResults("kata 6: " + kata6()) 
+showResults(kata6()) 
 
 function kata7() {
     let arrayValores = [];
@@ -90,7 +90,7 @@ function kata7() {
     return arrayValores
 }
 
-showResults("kata 7: " + kata7()) 
+showResults(kata7()) 
 
 function kata8() {
     let arrayValores = [];
@@ -101,7 +101,7 @@ function kata8() {
     }
     return arrayValores}
 
-    showResults("kata 8: " + kata8()) 
+    showResults(kata8()) 
 
 function kata9() {
     let arrayValores = [];
@@ -113,7 +113,7 @@ function kata9() {
     return arrayValores
 }
 
-showResults("kata 9: " + kata9()) 
+showResults(kata9()) 
 
 function kata10() {
    return sampleArray
@@ -133,7 +133,7 @@ function kata11() {
     return arrayValores
 }
 
-showResults("kata 11: " + kata11());
+showResults(kata11());
 
 function kata12() {
     let arrayValores = []
@@ -147,7 +147,7 @@ function kata12() {
     return arrayValores
 }
 
-showResults("kata 12: " + kata12());
+showResults(kata12());
 
 function kata13() {
     let arrayValores = []
@@ -161,7 +161,7 @@ function kata13() {
     return arrayValores
 }
 
-showResults("kata 13: " + kata13());
+showResults(kata13());
 
 function kata14() {
     let arrayValores = []
@@ -175,7 +175,7 @@ function kata14() {
     return arrayValores
 }
 
-showResults("kata 14: " + kata14());
+showResults(kata14());
 
 
 function kata15() {
@@ -197,7 +197,7 @@ function kata16() {
     return soma
 }
 
-showResults("kata 16: " + kata16());
+showResults(kata16());
 
 function kata17() {
     menorValor = sampleArray[0]
@@ -208,7 +208,7 @@ function kata17() {
     }
     return menorValor
 }
-showResults("kata 17: " + kata17());
+showResults(kata17());
 
 function kata18() {
     maiorValor = sampleArray[0]
@@ -222,7 +222,7 @@ function kata18() {
     }
 
 
-    showResults("kata 18: " + kata18());
+    showResults(kata18());
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
