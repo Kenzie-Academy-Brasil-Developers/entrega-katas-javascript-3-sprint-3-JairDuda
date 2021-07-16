@@ -1,126 +1,125 @@
 function showResults (valor){
 
     let newElement = document.createElement("div");
-    
-    let newText = document.createTextNode("Os valores são: " + valor)
+    newElement.className = "divInterna";
+    let newText = document.createTextNode("Os valores do "  + valor)
     newElement.appendChild(newText)
     let destino = document.getElementById("d1")
     destino.appendChild(newElement)
+
     
 }
 
 const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 398, 339, 882, 848, 179, 535, 940, 472];
 
 function kata1() {
+    
     let arrayValores = [];
     for(let i = 1 ; i <= 25; i++){
-       arrayValores.push(i)
+       arrayValores.push(" "+i)
        
     }
-    return showResults(arrayValores);
-       
+    
+    return arrayValores
 } 
 
-kata1()
+showResults("kata 1: " + kata1());
 
 
 function kata2() {
     let arrayValores = [];
     for(let i = 25 ; i >= 1; i--){
-       arrayValores.push(i)
+       arrayValores.push(" " + i)
     }
-    return showResults(arrayValores);
+    return arrayValores;
 }
 
-kata2()
+showResults("kata 2: " + kata2());
 
 function kata3() {
     let arrayValores = [];
     for(let i = -1 ; i >= -25; i--){
-       arrayValores.push(i)
+       arrayValores.push(" " + i)
     }
-    return showResults(arrayValores);
+    return arrayValores;
 }
 
-kata3()
+showResults("kata 3: " + kata3()); 
 
 function kata4() {
     let arrayValores = [];
     for(let i = -25 ; i <= -1; i++){
-       arrayValores.push(i)
+        arrayValores.push(" " + i)
     }
-    return showResults(arrayValores);
+    return arrayValores;
 }
 
-kata4()
+showResults("kata 4: " + kata4()); 
 
 function kata5() {
     let arrayValores = [];
     for(let i = 25 ; i >= -25; i--){
         if(i % 2 !== 0){
-            arrayValores.push(i)
+            arrayValores.push(" " + i)
         }
     }
-    return showResults(arrayValores);
+    return arrayValores
 }
+showResults("kata 5: " + kata5());
 
-kata5()
 
 function kata6() {
     let arrayValores = [];
     for(let i = 1 ; i <= 100; i++){
         if(i % 3 === 0){
-            arrayValores.push(i)
+            arrayValores.push(" " + i)
         }
     }
-    return showResults(arrayValores);
+    return arrayValores
 }
 
-kata6()
+showResults("kata 6: " + kata6()) 
 
 function kata7() {
     let arrayValores = [];
     for(let i = 1 ; i <= 100; i++){
         if(i % 7 === 0){
-            arrayValores.push(i)
+            arrayValores.push(" " + i)
         }
     }
-    return showResults(arrayValores);
+    return arrayValores
 }
 
-kata7()
+showResults("kata 7: " + kata7()) 
 
 function kata8() {
     let arrayValores = [];
     for(let i = 100 ; i >= 1; i--){
         if(i % 3 === 0 || i % 7 === 0){
-            arrayValores.push(i)
+            arrayValores.push(" " + i)
         }
     }
-    return showResults(arrayValores);
-}
+    return arrayValores}
 
-kata8()
+    showResults("kata 8: " + kata8()) 
 
 function kata9() {
     let arrayValores = [];
     for(let i = 1 ; i <= 100; i++){
         if(i % 2 !== 0 && i % 5 === 0){
-            arrayValores.push(i)
+            arrayValores.push(" " + i)
         }
     }
-    return showResults(arrayValores);
+    return arrayValores
 }
 
-kata9()
+showResults("kata 9: " + kata9()) 
 
 function kata10() {
-    showResults(sampleArray)
-
-    return showResults
+   return sampleArray
 }
 
-kata10()
+showResults("kata 10: " + kata10()) 
 
 function kata11() {
     let arrayValores = []
@@ -131,10 +130,10 @@ function kata11() {
         
         
     }
-    return showResults(arrayValores)
+    return arrayValores
 }
 
-kata11()
+showResults("kata 11: " + kata11());
 
 function kata12() {
     let arrayValores = []
@@ -145,10 +144,10 @@ function kata12() {
         
         
     }
-    return showResults(arrayValores)
+    return arrayValores
 }
 
-kata12()
+showResults("kata 12: " + kata12());
 
 function kata13() {
     let arrayValores = []
@@ -159,10 +158,10 @@ function kata13() {
         
         
     }
-    return showResults(arrayValores)
+    return arrayValores
 }
 
-kata13()
+showResults("kata 13: " + kata13());
 
 function kata14() {
     let arrayValores = []
@@ -173,10 +172,10 @@ function kata14() {
         
         
     }
-    return showResults(arrayValores)
+    return arrayValores
 }
 
-kata14()
+showResults("kata 14: " + kata14());
 
 
 function kata15() {
@@ -184,10 +183,10 @@ function kata15() {
     for(let i = 1; i<=20; i++){
         soma = soma + i;
     }
-    return showResults(soma)
+    return soma
 }
 
-kata15()
+showResults("kata 15: " + kata15());
 
 function kata16() {
     let soma = 0;
@@ -195,10 +194,10 @@ function kata16() {
         soma += sampleArray[i]
     }
 
-    return showResults(soma)
+    return soma
 }
 
-kata16()
+showResults("kata 16: " + kata16());
 
 function kata17() {
     menorValor = sampleArray[0]
@@ -207,10 +206,9 @@ function kata17() {
             menorValor = sampleArray[i]
         }
     }
-    return showResults(menorValor)
+    return menorValor
 }
-
-kata17()
+showResults("kata 17: " + kata17());
 
 function kata18() {
     maiorValor = sampleArray[0]
@@ -219,12 +217,12 @@ function kata18() {
             maiorValor = sampleArray[i]
         }
     }
-    return showResults(maiorValor)
+    return maiorValor
 
     }
 
 
-kata18()
+    showResults("kata 18: " + kata18());
 
 /**
  * Daqui em diante são os bônus, por sua conta e risco
@@ -269,27 +267,17 @@ kataBonus3()
 
 function kataBonus4() {
     for(let i = 0; i<sampleArray.length; i++){
-        if(i % 2 === 0){
         let newElement = document.createElement("div");
         newElement.className = "bar";
         newElement.style.width = sampleArray[i] + "px";
         newElement.style.height = 20 + "px"
-        newElement.style.background = "red"; 
+        newElement.style.background = "gray"; 
         newElement.style.margin = 10 + "px"
         newElement.style.display = "inline-block"
         let destination = document.getElementById("d5");
         destination.appendChild(newElement);
-        }
-        else{
-            let newElement = document.createElement("div");
-            newElement.className = "bar";
-            newElement.style.width = sampleArray[i] + "px";
-            newElement.style.height = 20 + "px"
-            newElement.style.background = "gray"; 
-            newElement.style.margin = 10 + "px"
-            newElement.style.display = "inline-block"
-            let destination = document.getElementById("d5");
-            destination.appendChild(newElement);
+        if(i % 2 === 0){
+            newElement.style.background = "red"; 
         }
     }
 }
@@ -297,21 +285,9 @@ function kataBonus4() {
 kataBonus4()
 
 function kataBonus5() {
-    let valor = 0
+    
     for(let i = 0; i<sampleArray.length; i++){
-        valor = sampleArray[i]
-        console.log(valor)
-        if(valor % 2 === 0){
-            let newElement = document.createElement("div");
-            newElement.className = "bar";
-            newElement.style.width = sampleArray[i] + "px";
-            newElement.style.height = 20 + "px"
-            newElement.style.background = "red"; 
-            newElement.style.margin = 10 + "px"
-            newElement.style.display = "inline-block"
-            let destination = document.getElementById("d6");
-            destination.appendChild(newElement);
-        }else{
+        
             let newElement = document.createElement("div");
             newElement.className = "bar";
             newElement.style.width = sampleArray[i] + "px";
@@ -319,9 +295,12 @@ function kataBonus5() {
             newElement.style.background = "gray"; 
             newElement.style.margin = 10 + "px"
             newElement.style.display = "inline-block"
-            let destination = document.getElementById("d5");
+            let destination = document.getElementById("d6");
             destination.appendChild(newElement);
-        }
+            if(sampleArray[i] % 2 === 0){
+                newElement.style.background = "red"; 
+
+            }
     }    
 }
 
