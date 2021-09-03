@@ -300,7 +300,7 @@ function kataBonus5() {
             if(sampleArray[i] % 2 === 0){
                 newElement.style.background = "red"; 
 
-            }
+            } 
     }    
 }
 
