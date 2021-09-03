@@ -228,45 +228,79 @@ function kata18() {
  * Daqui em diante são os bônus, por sua conta e risco
  */
 
-function kataBonus1() {
+ function kataBonus1() {
     
-        for(let i = 0; i<20; i++){
-        let newElement = document.createElement("div");
-        newElement.className = "bar";
-        newElement.style.width = 100 + "px";
-        newElement.style.height = 20 + "px"
-        newElement.style.background = "gray"; 
-        newElement.style.margin = 10 + "px"
-        newElement.style.display = "inline-block"
-        let destination = document.getElementById("d2");
-        destination.appendChild(newElement);
-        }
+    for(let i = 0; i<20; i++){
+    let newElement = document.createElement("div");
+    newElement.className = "bar";
+    newElement.style.width = 100 + "px";
+    newElement.style.height = 20 + "px"
+    newElement.style.background = "gray"; 
+    newElement.style.margin = 10 + "px"
+    newElement.style.display = "inline-block"
+    let destination = document.getElementById("d2");
+    destination.appendChild(newElement);
+    }
 }
 
 kataBonus1()
 
 function kataBonus2() {
-    // implemente o código do kata bonus 2 aqui
-}
-
-function kataBonus3() {
-    for(let i = 0; i<sampleArray.length; i++){
+    let parada = 200
+    for(let i = 105; i<=parada; i+=5){
         let newElement = document.createElement("div");
         newElement.className = "bar";
-        newElement.style.width = sampleArray[i] + "px";
+        newElement.style.width = i + "px";
         newElement.style.height = 20 + "px"
         newElement.style.background = "gray"; 
         newElement.style.margin = 10 + "px"
         newElement.style.display = "inline-block"
-        let destination = document.getElementById("d4");
+        let destination = document.getElementById("d3");
         destination.appendChild(newElement);
         }
+}
+
+console.log(kataBonus2())
+
+function kataBonus3() {
+for(let i = 0; i<sampleArray.length; i++){
+    let newElement = document.createElement("div");
+    newElement.className = "bar";
+    newElement.style.width = sampleArray[i] + "px";
+    newElement.style.height = 20 + "px"
+    newElement.style.background = "gray"; 
+    newElement.style.margin = 10 + "px"
+    newElement.style.display = "inline-block"
+    let destination = document.getElementById("d4");
+    destination.appendChild(newElement);
+    }
 }
 
 kataBonus3()
 
 function kataBonus4() {
-    for(let i = 0; i<sampleArray.length; i++){
+for(let i = 0; i<sampleArray.length; i++){
+    let newElement = document.createElement("div");
+    newElement.className = "bar";
+    newElement.style.width = sampleArray[i] + "px";
+    newElement.style.height = 20 + "px"
+    newElement.style.background = "gray"; 
+    newElement.style.margin = 10 + "px"
+    newElement.style.display = "inline-block"
+    let destination = document.getElementById("d5");
+    destination.appendChild(newElement);
+    if(i % 2 === 0){
+        newElement.style.background = "red"; 
+    }
+}
+}
+
+kataBonus4()
+
+function kataBonus5() {
+
+for(let i = 0; i<sampleArray.length; i++){
+    
         let newElement = document.createElement("div");
         newElement.className = "bar";
         newElement.style.width = sampleArray[i] + "px";
@@ -274,34 +308,13 @@ function kataBonus4() {
         newElement.style.background = "gray"; 
         newElement.style.margin = 10 + "px"
         newElement.style.display = "inline-block"
-        let destination = document.getElementById("d5");
+        let destination = document.getElementById("d6");
         destination.appendChild(newElement);
-        if(i % 2 === 0){
+        if(sampleArray[i] % 2 === 0){
             newElement.style.background = "red"; 
-        }
-    }
-}
 
-kataBonus4()
-
-function kataBonus5() {
-    
-    for(let i = 0; i<sampleArray.length; i++){
-        
-            let newElement = document.createElement("div");
-            newElement.className = "bar";
-            newElement.style.width = sampleArray[i] + "px";
-            newElement.style.height = 20 + "px"
-            newElement.style.background = "gray"; 
-            newElement.style.margin = 10 + "px"
-            newElement.style.display = "inline-block"
-            let destination = document.getElementById("d6");
-            destination.appendChild(newElement);
-            if(sampleArray[i] % 2 === 0){
-                newElement.style.background = "red"; 
-
-            } 
-    }    
+        } 
+}    
 }
 
 kataBonus5()
